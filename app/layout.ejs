@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+      <nav class="nav border border-1 border-mainTextColor">
+        <div class="container">
+          <div class="innerNav d-flex justify-content-center align-items-center position-relative">
+              <h1 class="navTitle text-primary pt-7 pb-7 fs-md-6 fs-lg-5">EXHIBINECTION</h1>
+              <ul class="navList list-unstyled position-absolute d-flex">
+                <li class=""><a class="d-block text-mainTextColor fs-8 ps-4 pe-4 d-md-block d-none" href="#">Sign in</a></li>
+                <li class=""><a class="d-block text-mainTextColor fs-8 ps-4 pe-4 d-md-block d-none" href="#">Sign up</a></li>
+                <li class="ps-4">
+                  <a class="position-relative" href="#">
+                    <span class="confirmIcon d-block material-icons text-mainTextColor">confirmation_number</span>
+                    <span class="confirmNumber position-absolute text-center fs-10">3</span>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>  
+
+    <%- contents %>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="innerFooter d-flex justify-content-between align-items-center pt-7 pb-7">
+          <ul class="webInfo list-unstyled d-md-flex align-items-center">
+            <li class="me-4 text-mainTextColor fs-6 fs-lg-5">EXHIBINECTION</li>
+            <li class="text-mainTextColor">© 2020. All Rights Reserved.</li>
+          </ul>
+          <ul class="footerList list-unstyled d-flex">
+            <li class="me-6"><a class="text-mainTextColor d-md-block d-none" href="#">Sign in</a></li>
+            <li><a class="text-mainTextColor d-md-block d-none" href="#">Sign up</a></li>
+          </ul>
+        </div>
+        
+
+      </div>
+    </footer>
+
+    <!-- JS 放置處 -->
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
