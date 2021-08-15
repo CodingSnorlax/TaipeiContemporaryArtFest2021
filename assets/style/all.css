@@ -10,6 +10,10 @@ body a {
   display: block;
 }
 
+body img {
+  vertical-align: middle;
+}
+
 .navList {
   right: 0;
   top: 50%;
@@ -23,6 +27,12 @@ body a {
   border-radius: 9px;
   width: 22px;
   height: 18px;
+}
+
+.mainTitleStyle {
+  color: black;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 .banner {
@@ -41,8 +51,12 @@ body a {
 
 .subNavListItem a {
   color: #707070;
-  padding: 14px 22px;
-  background-color: brown;
+  padding: 14px 28px;
+}
+
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*# sourceMappingURL=all.css.map */
