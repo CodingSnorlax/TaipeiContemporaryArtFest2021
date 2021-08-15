@@ -89,7 +89,8 @@ $theme-colors: (
   "dark":       $dark,
   "mainTextColor": #707070,   // new
   "white":      $white,       // new
-  "black":      $black       // new
+  "black":      $black,       // new
+  "cardBg":     #EFEFEF,     // new
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -253,19 +254,26 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,  // 4
-  2: $spacer * .5,  // 8
-  3: $spacer * .75, // 12 new
-  4: $spacer * 1,  // 16
-  5: $spacer * 1.25,  // 20 new
-  6: $spacer * 1.5,  // 24 new
-  7: $spacer * 1.75,  // 28 new
-  8: $spacer * 2,  // 32 new
+  1: $spacer * .25,     // 4
+  2: $spacer * .5,      // 8
+  3: $spacer * .75,     // 12 new
+  4: $spacer * 1,       // 16
+  5: $spacer * 1.25,    // 20 new
+  6: $spacer * 1.5,     // 24 new
+  7: $spacer * 1.75,    // 28 new
+  8: $spacer * 2,       // 32 new
   9: $spacer * 2.25,    // 36 new
-  10: $spacer * 2.5,   // 40 new
+  10: $spacer * 2.5,    // 40 new
   11: $spacer * 2.75,   // 44 new
-  12: $spacer * 3,   // 48 new
-  20: $spacer * 5,   // 80 new
+  12: $spacer * 3,      // 48 new
+  13: $spacer * 3.25,   // 52 new
+  14: $spacer * 3.5,    // 56 new
+  15: $spacer * 3.75,   // 60 new
+  16: $spacer * 4,      // 64 new
+  17: $spacer * 4.25,   // 68 new
+  18: $spacer * 4.5,    // 72 new
+  19: $spacer * 4.75,   // 76 new
+  20: $spacer * 5,      // 80 new
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
