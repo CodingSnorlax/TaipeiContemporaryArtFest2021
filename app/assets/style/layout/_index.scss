@@ -18,16 +18,21 @@
 }
 
 .bannerBtnGroup{
-  button{
-    width: 160px;
-    height: 44px;
-  }
+  
 }
 
 // 次要導覽列 ------------------------------------
 
+.subNav{
+  height: 2.75rem; /* 隱藏下方捲軸 */
+  overflow-y: hidden; 
+}
+
 .subNavList{
-  
+    flex-wrap: nowrap;
+    padding-bottom: 1rem; /* 隱藏下方捲軸 */
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .subNavListItem{
@@ -47,6 +52,5 @@
 .fbIcon{
   margin-left: 10px;
 }
-
 
 
