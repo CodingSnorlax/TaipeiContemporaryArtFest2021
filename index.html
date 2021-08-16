@@ -36,12 +36,11 @@
 <div class="banner d-flex flex-column justify-content-center">
     <div class="container">
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-11">
+            <div class="col-12 offset-md-1 col-md-11">
                 <h2 class="text-white mb-2">台北當代藝術展</h2>
                 <h3 class="text-white mb-4">01 JUN - 31 OCT</h3>
-                <div class="bannerBtnGroup">
-                    <button type="button" class="btn btn-secondary me-2">購買票券</button>
+                <div class="bannerBtnGroup w-100 bg-info">
+                    <button type="button" class="btn btn-secondary me-md-2">購買票券</button>
                     <button type="button" class="btn btn-outline-white">詳細資訊</button>
                 </div>
             </div>
@@ -70,50 +69,43 @@
 <!-- 熱門特展 -->
 
 <div class="popularShow pt-15">
+
     <div class="container">
         
         <h2 class="mainTitleStyle mb-6">熱門特展</h2>
-            <div class="card">
+
+            <div class="card bg-cardBg pt-8 pb-8 ps-5 pe-5 p-md-0">
                 <div class="row g-0">
-                    <div class="col-md-4">
+                    <div class="col-12 col-md-4">
                         <div class="img ratio ratio-1x1 border border-1">
                             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="2021 台味設計展">
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h3 class="card-title">2021 台味設計展</h3>
-                            <span>$350</span>
-                            <p class="card-text">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+                    <div class="col-12 col-md-7">
+                        <div class="card-body pt-md-10 ps-md-6 pe-md-20 h-100 d-flex flex-column justify-content-between">
+                            <div class="cardBodyText">
+                                <h3 class="card-title d-flex fw-bold fs-7 mb-1">
+                                    2021 台味設計展
+                                    <a class="fbIcon d-md-none" href="#"><img src="./assets/images/facebook-24px.svg" alt="FB icon"></a>
+                                    <span class="innerExhibitionDate fw-normal d-md-none ms-9">01 JUN — 31 OCT</span>
+                                </h3>
+                                <span class="price fs-7 mb-2">$350</span>
+                                <p class="card-text mb-5">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+                            </div>
+                            <div class="card-btn-group pb-md-13"> 
+                                <a href="#" class="btn btn-primary me-1">購買票券</a>
+                                <a href="#" class="btn btn-outline-primary">收藏展覽</a>
+                            </div>
                         </div>
                     </div>
-
+                    <div class="exhibitionDate col-md-1 d-none d-md-block">
+                        <div class="exhibitionDateContent h-100 d-flex flex-column justify-content-between align-items-end pe-md-6">
+                            <span class="innerExhibitionDate fw-normal d-md-block fs-md-7 fs-lg-1 pt-md-10">01<br>JUN<br>|<br>31<br>OCT</span>
+                            <a class="fbIcon d-md-block pb-md-13" href="#"><img src="./assets/images/facebook-24px.svg" alt="FB icon"></a>
+                        </div>
+                    </div>
                 </div>
-                
-        
-            
-            
-            
-        </div>
-
-
-
-                <div class="card row d-flex flex-row">
-                    <div class="img col-md-4 ratio ratio-1x1">
-                        <img class="d-block border-1 border-primary border" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" class="card-img-top" alt="2021 台味設計展">
-                    </div>
-                    <div class="card-body col-lg-7 bg-cardBg">
-                      <h3 class="card-title">2021 台味設計展</h3>
-                      <span>$350</span>
-                      <p class="card-text">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
-                      <div class="card-btn-group">
-                        <a href="#" class="btn btn-primary me-2">購買票券</a>
-                        <a href="#" class="btn btn-outline-primary">收藏展覽</a>
-                      </div>
-                    </div>
-                    <div class="date col-lg-1">2021</div>
-                  </div>
-            
+            </div>
       
 
     </div>
