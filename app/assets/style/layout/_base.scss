@@ -1,9 +1,12 @@
 body{
 
+    line-height: 1.5;
+
     *, *::before, *::after {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        // outline: grey 1px solid;
     }
 
     a{
@@ -13,6 +16,9 @@ body{
 
     img{
         vertical-align: middle;
+        // RWD 不破圖設定
+        max-width: 100%;
+        height: auto;
     }
     
 }

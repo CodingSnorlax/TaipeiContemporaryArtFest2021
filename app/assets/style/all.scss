@@ -1,3 +1,11 @@
+// layout 設定
+@import './layout/reset';
 @import './layout/base';
 @import './layout/layout';
+
+// SCSS 頁面
 @import './layout/_index.scss';
+
+// utilities
+@import './utilities/fontsize'
+

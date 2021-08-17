@@ -38,16 +38,20 @@
 .subNavListItem{
   a{
     color: #707070;
-    padding: 14px 18px;
+    padding: 14px 22px;
   }
 }
 
-.card{
+.exhibitionImg{
+
+    height: 100%;
+
   img{
     object-fit: cover;
-  }
-}
+    height: 100%;
+    }
 
+  }
 
 .fbIcon{
   margin-left: 10px;
