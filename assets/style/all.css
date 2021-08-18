@@ -19853,13 +19853,14 @@ body img {
 }
 
 .exhibitionImg {
-  height: 100%;
+  height: 350px;
 }
 
 .exhibitionImg img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
+  height: 350px;
 }
 
 .fbIcon {
@@ -19881,11 +19882,6 @@ body img {
 
 .mainLiveShowTitle span {
   border-left: 1px solid white;
-}
-
-.try {
-  width: 100%;
-  height: 100%;
 }
 
 .swiper-container {
