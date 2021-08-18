@@ -40,11 +40,11 @@
 
 .exhibitionImg{
     height: 350px;
-    // 原本為height 100% 試修改
+    // 原本為height 100%; 導致在手機版上破圖
   img{
     width: 100%; // new
+    height: 350px;    // 原本為height: 100%; 導致在手機版上破圖
     object-fit: cover;
-    height: 350px;    // height: 100%;
     }
   }
 
@@ -71,8 +71,7 @@
   }
 }
 
-
-// swiper 
+// swiper ------------------------------------------------
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -84,4 +83,18 @@
     width: 100%;
     height: 350px;
   }
+}
+
+// 訂閱區塊 --------------------------------------------
+.subscribeBar{
+  background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.subscribeBtnGroup{
+  width: 350px;
 }
