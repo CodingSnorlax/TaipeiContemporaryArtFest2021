@@ -39,7 +39,8 @@
 }
 
 .exhibitionImg{
-    height: 100%;
+    height: 350px;
+    // 原本為height 100% 試修改
   img{
     object-fit: cover;
     height: 100%;
@@ -69,10 +70,6 @@
   }
 }
 
-.try{
-  width: 100%;
-  height: 100%;
-}
 
 // swiper 
 .swiper-container {
