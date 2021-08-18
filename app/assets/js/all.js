@@ -5,7 +5,7 @@ $(function() {
 // Initialize Swiper
 
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         freeMode: true,
       });
