@@ -1,5 +1,14 @@
 @include media-breakpoint-up(md) {
-    .fs-md-7 {
-     font-size: 1.25rem !important;
+
+    .fs-md-5{
+        font-size: 1.5rem !important;
     }
-  }
+
+    .fs-md-6{
+        font-size: 1.375rem !important;
+    }
+
+    .fs-md-7{
+        font-size: 1.25rem !important;
+    }
+}

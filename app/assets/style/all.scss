@@ -1,5 +1,10 @@
-// layout 設定
+// reset 設定
 @import './layout/reset';
+
+// 原始檔案
+@import './helpers/bootstrap.scss';
+
+// layout 設定
 @import './layout/base';
 @import './layout/layout';
 
@@ -7,5 +12,8 @@
 @import './layout/_index.scss';
 
 // utilities
-@import './utilities/fontsize'
+@import '../../../node_modules/bootstrap/scss/utilities';
+@import './utilities/utilities';
+@import './utilities/fontsize';
+
 

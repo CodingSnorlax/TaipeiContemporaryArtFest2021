@@ -17,10 +17,6 @@
   height: 480px;
 }
 
-.bannerBtnGroup{
-  
-}
-
 // 次要導覽列 ------------------------------------
 
 .subNav{
@@ -43,18 +39,51 @@
 }
 
 .exhibitionImg{
-
     height: 100%;
-
   img{
     object-fit: cover;
     height: 100%;
     }
-
   }
 
 .fbIcon{
   margin-left: 10px;
 }
 
+.mainLiveShow{
+  background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
 
+.mainLiveShowContent{
+  background-color: rgba(25, 0, 20, 0.7);
+}
+
+.mainLiveShowTitle{
+  span{
+    border-left: 1px solid white;
+  }
+}
+
+.try{
+  width: 100%;
+  height: 100%;
+}
+
+// swiper 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide{
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+  }
+}

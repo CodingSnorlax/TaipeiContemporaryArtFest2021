@@ -1,0 +1,23 @@
+// 抓取文字斷點
+$utilities: map-merge(
+$utilities,(
+"font-size": map-merge(
+      map-get($utilities,"font-size"),
+      (
+        responsive: true,
+      )
+    ),
+  ),
+);
+
+
+// navbar 的 logo 上下左右置中設定
+
+@include media-breakpoint-up(lg) {
+    .position-lg-absolute {
+      position: absolute;
+    }
+    .translate-lg-middle {
+      transform: translate(-50%, -50%);
+    }
+  }
