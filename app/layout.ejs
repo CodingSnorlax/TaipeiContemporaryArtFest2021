@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
   <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
   </head>
 
   <body>
-<!------------------------------------------  漢堡選單 ---------------------------------------------------->
+<!-------------- 漢堡選單 ---------------->
     <header class="border border-1 border-mainTextColor">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -44,8 +44,80 @@
         </nav>
       </div>
     </header>
+    
 
-    <%- contents %>
+    <%- contents %>    <!-- 各分頁自己獨立的內容 -->
+
+
+    <!-- 猜你也喜歡... (swiper) -->
+
+<div class="likeInfo pt-5 pt-md-15 <%- display %>">
+  <div class="container">
+      <h2 class="mainTitleStyle mb-2 mb-md-6">猜你也喜歡...</h2>
+      <div class="row">
+          <div class="col-12 offset-md-1 col-md-11">
+
+              <div class="swiper-container mySwiper">
+
+                  <div class="swiper-wrapper">
+
+                          <div class="swiper-slide">
+                              <div class="card">
+                                  <img class="border-radius-0" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body pb-15">
+                                      <h4 class="fs-7 mb-1 fw-bold">空間·幻境 3D空間設計展</h4>
+                                      <span class="fs-7">$350</span>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                              <div class="card">
+                                  <img class="border-radius-0" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body pb-15">
+                                      <h4 class="fs-7 mb-1 fw-bold">肉身實驗劇場</h4>
+                                      <span class="fs-7">$350</span>
+                                  </div>
+                              </div>
+                          </div>
+                  
+                          <div class="swiper-slide">
+                              <div class="card">
+                                  <img class="border-radius-0" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg" class="card-img-top" alt="...">
+                                  <div class="card-body pb-15">
+                                      <h4 class="fs-7 mb-1 fw-bold">奧利弗·洛奇百年回顧展</h4>
+                                      <span class="fs-7">$350</span>
+                                  </div>
+                                </div>
+                          </div>
+                    
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- 訂閱最新消息 -->
+
+<div class="subscribeBar d-flex flex-column justify-content-end pb-9 <%- display %>">
+  <div class="container">
+      <div class="subscribeContent">
+          <div class="subscribeText mb-5">
+              <p class="text-white fw-bold fs-5 fs-md-3">想收到最新消息嗎？</p>
+              <p class="text-white fw-bold fs-5 fs-md-3">快訂閱我們！</p>
+          </div>
+          <div class="subscribeBtnGroup input-group mb-3">
+              <input type="text" class="form-control" placeholder="請輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text ps-13 pe-13 btn-secondary" id="basic-addon2">訂閱</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+    <!-- footer 版權宣告區 -->
 
     <footer class="footer">
       <div class="container">

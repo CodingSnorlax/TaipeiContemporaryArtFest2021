@@ -1,11 +1,4 @@
-.navList{
-    right: 0;
-    top: 50%;
-}
-
-.confirmIcon{
-}
-
+// ticket icon 小圓點 --------
 .confirmNumber{
     right: -12px;
     top: -7px;
@@ -15,3 +8,32 @@
     width: 22px;
     height: 18px;
 }
+
+// 猜你也喜歡 swiper ------------------------------------------------
+// 從 swiper 套件抓下來的東西（非手寫）
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide{
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 350px;
+    }
+  }
+  
+  // 訂閱區塊 --------------------------------------------
+  .subscribeBar{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .subscribeBtnGroup{
+    width: 350px;
+  }
