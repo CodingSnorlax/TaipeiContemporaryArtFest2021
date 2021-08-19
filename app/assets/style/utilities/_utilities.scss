@@ -21,3 +21,11 @@ $utilities,(
       transform: translate(-50%, -50%);
     }
   }
+
+//  買票的右邊邊線
+@include media-breakpoint-up(md) {
+    .amountBoxLine{
+        border-right: 1px solid #707070;
+    }
+} 
+

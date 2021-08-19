@@ -8,12 +8,15 @@
 @import './layout/base';
 @import './layout/layout';
 
-// SCSS 頁面
-@import './layout/_index.scss';
 
 // utilities
 @import '../../../node_modules/bootstrap/scss/utilities';
 @import './utilities/utilities';
 @import './utilities/fontsize';
+
+
+// SCSS 頁面
+@import './pages/index';
+@import './pages/event';
 
 
