@@ -19829,6 +19829,41 @@ body img {
   width: 350px;
 }
 
+@media (min-width: 992px) {
+  .position-lg-absolute {
+    position: absolute;
+  }
+  .translate-lg-middle {
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 768px) {
+  .amountBoxLine {
+    border-right: 1px solid #707070;
+  }
+}
+
+@media (min-width: 768px) {
+  .fs-md-2 {
+    font-size: 2.25rem !important;
+  }
+  .fs-md-3 {
+    font-size: 2rem !important;
+  }
+  .fs-md-5 {
+    font-size: 1.5rem !important;
+  }
+  .fs-md-6 {
+    font-size: 1.375rem !important;
+  }
+  .fs-md-7 {
+    font-size: 1.25rem !important;
+  }
+}
+
 .mainTitleStyle {
   color: black;
   font-weight: bold;
@@ -19896,33 +19931,34 @@ body img {
   border-left: 1px solid white;
 }
 
-@media (min-width: 992px) {
-  .position-lg-absolute {
-    position: absolute;
-  }
-  .translate-lg-middle {
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
+.orderBtn input {
+  width: 46px;
 }
 
-@media (min-width: 768px) {
-  .fs-md-2 {
-    font-size: 2.25rem !important;
-  }
-  .fs-md-3 {
-    font-size: 2rem !important;
-  }
-  .fs-md-5 {
-    font-size: 1.5rem !important;
-  }
-  .fs-md-6 {
-    font-size: 1.375rem !important;
-  }
-  .fs-md-7 {
-    font-size: 1.25rem !important;
-  }
+.typeBtn {
+  border-bottom: 1px solid transparent;
+  color: black;
+}
+
+.typeBtn:hover {
+  border-bottom: 1px solid #E31277;
+}
+
+.firstParagraph {
+  text-indent: 2rem;
+}
+
+.artWorkOne {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.artWorkTwo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 559px;
 }
 
 /*# sourceMappingURL=all.css.map */
