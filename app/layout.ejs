@@ -14,10 +14,10 @@
 
   <body>
 <!-------------- 漢堡選單 ---------------->
-    <header class="border border-1 border-mainTextColor">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
+    <!-- <header class="border border-1 border-mainTextColor">
+      <div class="container"> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border border-1 border-mainTextColor" style="z-index:1090;">
+          <div class="container">
             <!-- 漢堡Btn -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -25,9 +25,9 @@
             <!-- logo -->
             <a class="navbar-brand text-primary position-lg-absolute top-50 start-50 translate-lg-middle fs-6 fs-md-5" href="./index.html">EXHIBINECTION</a>
             <!-- ticket icon -->
-            <a class="position-relative order-lg-3 ms-lg-6 d-block" href="#">
+            <a class="position-relative order-lg-3 ms-lg-6 d-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="#">
               <span class="confirmIcon d-block material-icons text-mainTextColor">confirmation_number</span>
-              <span class="confirmNumber position-absolute text-center fs-10">3</span>
+              <span class="confirmNumber position-absolute text-center fs-10">5</span>
             </a>
             <!-- 漢堡Btn的折疊選單 -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,12 +42,136 @@
             </div>
           </div>
         </nav>
-      </div>
-    </header>
+      <!-- </div>
+    </header> -->
     
 
     <%- contents %>    <!-- 各分頁自己獨立的內容 -->
 
+    <!-- ticket icon 上跳出來的訂購視窗 (offcanvas) -->
+
+    <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header pt-20">
+        <h5 class="text-white fw-bold fs-5" id="offcanvasRightLabel">Cart List</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body scrollbarStyle">
+        <ul>
+          <li>
+            <div class="card rounded pb-4 ps-4 mb-2">
+              <a class="cartCloseBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+                <div class="cardBody d-flex">
+                  <div class="offcanvasImg">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
+                  </div>
+                  <div class="cardText ms-4">
+                    <h5 class="fw-bold fs-8 mb-1">2021 台味設計展</h5>
+                    <p class="mb-1">01 JUN — 31 OCT</p>
+                    <p class="text-mainTextColor mb-3">全票</p>
+                    <p class="fw-bold fs-7">NT$350</p>
+                  </div>
+                  <div class="cartCountBox d-flex flex-md-row flex-column align-items-center justify-content-between ms-10">
+                    <button class="border-0 bg-white me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                    <input class="border-0 text-center mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                    <button class="border-0 bg-white ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                  </div>
+                </div>
+            </div>
+          </li>
+          <li>
+            <div class="card rounded pb-4 ps-4 pe-2 mb-2">
+              <a class="cartCloseBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+                <div class="cardBody d-flex">
+                  <div class="offcanvasImg">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
+                  </div>
+                  <div class="cardText ms-4">
+                    <h5 class="fw-bold fs-8 mb-1">No.22 線上設計展</h5>
+                    <p class="mb-1">01 JUN — 31 OCT</p>
+                    <p class="text-mainTextColor mb-3">全票</p>
+                    <p class="fw-bold fs-7">NT$350</p>
+                  </div>
+                  <div class="cartCountBox d-flex flex-md-row flex-column align-items-center justify-content-between ms-10">
+                    <button class="border-0 bg-white me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                    <input class="border-0 text-center mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                    <button class="border-0 bg-white ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                  </div>
+                </div>
+            </div>
+          </li>
+         <li>
+          <div class="card rounded pb-4 ps-4 pe-2 mb-2">
+            <a class="cartCloseBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+              <div class="cardBody d-flex">
+                <div class="offcanvasImg">
+                  <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
+                </div>
+                <div class="cardText ms-4">
+                  <h5 class="fw-bold fs-8 mb-1">高雄設計節</h5>
+                  <p class="mb-1">01 JUN — 31 OCT</p>
+                  <p class="text-mainTextColor mb-3">全票</p>
+                  <p class="fw-bold fs-7">NT$350</p>
+                </div>
+                <div class="cartCountBox d-flex flex-md-row flex-column align-items-center justify-content-between ms-10">
+                  <button class="border-0 bg-white me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                  <input class="border-0 text-center mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                  <button class="border-0 bg-white ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                </div>
+              </div>
+          </div>
+         </li>
+         <li>
+          <div class="card rounded pb-4 ps-4 pe-2 mb-2">
+            <a class="cartCloseBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+              <div class="cardBody d-flex">
+                <div class="offcanvasImg">
+                  <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
+                </div>
+                <div class="cardText ms-4">
+                  <h5 class="fw-bold fs-8 mb-1">肉身實驗劇場</h5>
+                  <p class="mb-1">01 JUN — 31 OCT</p>
+                  <p class="text-mainTextColor mb-3">全票</p>
+                  <p class="fw-bold fs-7">NT$350</p>
+                </div>
+                <div class="cartCountBox d-flex flex-md-row flex-column align-items-center justify-content-between ms-10">
+                  <button class="border-0 bg-white me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                  <input class="border-0 text-center mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                  <button class="border-0 bg-white ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                </div>
+              </div>
+          </div>
+         </li>
+         <li>
+          <div class="card rounded pb-4 ps-4 pe-2 mb-2">
+            <a class="cartCloseBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+              <div class="cardBody d-flex">
+                <div class="offcanvasImg">
+                  <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
+                </div>
+                <div class="cardText ms-4">
+                  <h5 class="fw-bold fs-8 mb-1">奧利弗·洛奇百年紀念展</h5>
+                  <p class="mb-1">01 JUN — 31 OCT</p>
+                  <p class="text-mainTextColor mb-3">全票</p>
+                  <p class="fw-bold fs-7">NT$350</p>
+                </div>
+                <div class="cartCountBox d-flex flex-md-row flex-column align-items-center justify-content-between ms-2">
+                  <button class="border-0 bg-white me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                  <input class="border-0 text-center mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                  <button class="border-0 bg-white ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                </div>
+              </div>
+          </div>
+         </li>
+        </ul>
+      </div>
+      <div class="offcanvas-footer bg-black d-flex align-items-center justify-content-between pt-9 pb-9 ps-4 pe-4">
+        <div class="offcanvas-footerText d-flex">
+          <p class="text-white fs-7 me-6">小計</p>
+          <p class="text-white fs-7">NT$1750</p>
+        </div>
+        <button type="button" class="btn btn-primary ps-7 pe-7 pt-3 pb-3">結帳去</button>
+      </div>
+    </div>
 
     <!-- 猜你也喜歡... (swiper) -->
 
@@ -85,7 +209,7 @@
                               <div class="card">
                                   <img class="border-radius-0" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg" class="card-img-top" alt="...">
                                   <div class="card-body pb-15">
-                                      <h4 class="fs-7 mb-1 fw-bold">奧利弗·洛奇百年回顧展</h4>
+                                      <h4 class="fs-7 mb-1 fw-bold">奧利弗·洛奇百年紀念展</h4>
                                       <span class="fs-7">$350</span>
                                   </div>
                                 </div>
