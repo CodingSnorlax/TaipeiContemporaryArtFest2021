@@ -19804,6 +19804,62 @@ body img {
   height: 18px;
 }
 
+.offcanvas {
+  width: 540px;
+}
+
+.offcanvasImg {
+  width: 120px;
+  height: 120px;
+}
+
+.offcanvasImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.cartCloseBtn {
+  width: 30px;
+  height: 30px;
+}
+
+.cartCountBox input {
+  width: 30px;
+}
+
+.offcanvas-header {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.scrollbarStyle {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.scrollbarStyle::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.scrollbarStyle::-webkit-scrollbar-track {
+  background: #E9ECEF;
+}
+
+.scrollbarStyle::-webkit-scrollbar-thumb {
+  background: #E31277;
+  border-radius: 4px 0px 0px 4px;
+  min-height: 81px;
+}
+
+.scrollbarStyle::-webkit-scrollbar-thumb:hover {
+  background: #707070;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
