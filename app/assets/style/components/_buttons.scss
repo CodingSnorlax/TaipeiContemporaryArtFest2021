@@ -1,0 +1,25 @@
+// 關閉按鈕 (24 x 24)
+.closeBtn{
+    width: 24px;
+    height: 24px;
+    color: black;
+  }
+
+
+// 數量增減按鈕元件
+.amountBtnGroup{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input{
+    border: none;
+    width: 30px;
+    text-align: center;
+  }
+
+  button{
+    border: none;
+    background-color: #fff;
+  }
+}

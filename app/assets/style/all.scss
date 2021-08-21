@@ -8,6 +8,10 @@
 @import './layout/base';
 @import './layout/layout';
 
+// component
+@import './components/buttons';
+@import './components/timeline';
+
 
 // utilities
 @import '../../../node_modules/bootstrap/scss/utilities';
@@ -18,5 +22,6 @@
 // SCSS 頁面
 @import './pages/index';
 @import './pages/event';
+@import './pages/orderCheck'
 
 

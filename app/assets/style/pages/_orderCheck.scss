@@ -1,0 +1,20 @@
+
+
+    .orderListImg{
+        object-fit: cover;
+        width: 100%;
+        height: 120px;
+    }
+
+    .orderList{
+        overflow-y: scroll;
+        // 為何會有這一條x軸
+        width: 100%;
+        max-height: 600px;
+    }
+
+   .totalArea{
+       @include media-breakpoint-up(md){
+        padding-top: 600px;
+       }
+   }

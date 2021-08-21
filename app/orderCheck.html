@@ -1,0 +1,216 @@
+---
+title: 購物車 - 確認訂單
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+display: d-none
+---
+
+<!-- 時間軸 確認訂單 -->
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-md-8">
+            <div class="row timeline-section mb-5 mb-md-7">
+                <div class="col-3 g-0">
+                    <div class="timeline-pointer-pass">
+                      <p class="pt-2 fs-9">確認訂單</p>
+                    </div>
+                  </div>
+                  <div class="col-3 g-0">
+                    <div class="timeline-pointer">
+                      <p class="pt-2 fs-9">填寫訂購資訊</p>
+                    </div>
+                  </div>
+                  <div class="col-3 g-0">
+                    <div class="timeline-pointer">
+                      <p class="pt-2 fs-9">填寫付款資訊</p>
+                    </div>
+                  </div>
+                  <div class="col-3 g-0">
+                    <div class="timeline-pointer">
+                      <p class="pt-2 fs-9">完成訂購</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 使用者購票結果顯示介面 -->
+
+    <div class="row">
+        <div class="col-md-8">
+                <ul  class="orderList">
+                    <li class="row mb-5">
+                        <div class="col-6 col-lg-3">
+                            <img class="orderListImg" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="2021 台味設計展">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <h3 class="fw-bold">2021 台味設計展</h3>
+                                <a class="closeBtn d-lg-none" href="#"><span class="d-block material-icons"> close </span></a>
+                            </div>
+                            <p>01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between mb-1">
+                                <p class="text-mainTextColor">全票<span class="text-black fw-bold fs-7 ms-1 d-lg-none">1</span></p>
+                                <p class="fw-bold fs-7 d-lg-none">NT$350</p>
+                            </div>
+                        </div>
+                        <div class="d-none col-lg-2 d-lg-flex justify-content-center align-items-center">
+                            <span class="fs-7 fw-bold">NT$350</span>
+                        </div>
+                        <div class="d-none col-lg-3 d-lg-flex justify-content-center align-items-center">
+                            <div class="amountBtnGroup flex-md-row flex-column">
+                                <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                                <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                                <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                            </div>
+                        </div>
+                        <div class="d-none col-lg-1 d-lg-flex align-items-center justify-content-center">
+                            <a class="closeBtn" href="#"><span class="d-block material-icons"> close </span></a>
+                        </div>
+                    </li>
+                    <li class="row mb-5">
+                        <div class="col-6 col-lg-3">
+                            <img class="orderListImg" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="2021 台味設計展">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <h3 class="fw-bold">No.22 線上設計展</h3>
+                                <a class="closeBtn d-lg-none" href="#"><span class="d-block material-icons"> close </span></a>
+                            </div>
+                            <p>01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between mb-1">
+                                <p class="text-mainTextColor">全票<span class="text-black fw-bold fs-7 ms-1 d-lg-none">1</span></p>
+                                <p class="fw-bold fs-7 d-lg-none">NT$350</p>
+                            </div>
+                        </div>
+                        <div class="d-none col-lg-2 d-lg-flex justify-content-center align-items-center">
+                            <span class="fs-7 fw-bold">NT$350</span>
+                        </div>
+                        <div class="d-none col-lg-3 d-lg-flex justify-content-center align-items-center">
+                            <div class="amountBtnGroup flex-md-row flex-column">
+                                <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                                <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                                <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                            </div>
+                        </div>
+                        <div class="d-none col-lg-1 d-lg-flex align-items-center justify-content-center">
+                            <a class="closeBtn" href="#"><span class="d-block material-icons"> close </span></a>
+                        </div>
+                    </li>
+                    <li class="row mb-5">
+                        <div class="col-6 col-lg-3">
+                            <img class="orderListImg" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="2021 台味設計展">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <h3 class="fw-bold">高雄設計節</h3>
+                                <a class="closeBtn d-lg-none" href="#"><span class="d-block material-icons"> close </span></a>
+                            </div>
+                            <p>01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between mb-1">
+                                <p class="text-mainTextColor">全票<span class="text-black fw-bold fs-7 ms-1 d-lg-none">1</span></p>
+                                <p class="fw-bold fs-7 d-lg-none">NT$350</p>
+                            </div>
+                        </div>
+                        <div class="d-none col-lg-2 d-lg-flex justify-content-center align-items-center">
+                            <span class="fs-7 fw-bold">NT$350</span>
+                        </div>
+                        <div class="d-none col-lg-3 d-lg-flex justify-content-center align-items-center">
+                            <div class="amountBtnGroup flex-md-row flex-column">
+                                <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                                <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                                <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                            </div>
+                        </div>
+                        <div class="d-none col-lg-1 d-lg-flex align-items-center justify-content-center">
+                            <a class="closeBtn" href="#"><span class="d-block material-icons"> close </span></a>
+                        </div>
+                    </li>
+                    <li class="row mb-5">
+                        <div class="col-6 col-lg-3">
+                            <img class="orderListImg" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg" alt="2021 台味設計展">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <h3 class="fw-bold">肉身實驗劇場</h3>
+                                <a class="closeBtn d-lg-none" href="#"><span class="d-block material-icons"> close </span></a>
+                            </div>
+                            <p>01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between mb-1">
+                                <p class="text-mainTextColor">全票<span class="text-black fw-bold fs-7 ms-1 d-lg-none">1</span></p>
+                                <p class="fw-bold fs-7 d-lg-none">NT$350</p>
+                            </div>
+                        </div>
+                        <div class="d-none col-lg-2 d-lg-flex justify-content-center align-items-center">
+                            <span class="fs-7 fw-bold">NT$350</span>
+                        </div>
+                        <div class="d-none col-lg-3 d-lg-flex justify-content-center align-items-center">
+                            <div class="amountBtnGroup flex-md-row flex-column">
+                                <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                                <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                                <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                            </div>
+                        </div>
+                        <div class="d-none col-lg-1 d-lg-flex align-items-center justify-content-center">
+                            <a class="closeBtn" href="#"><span class="d-block material-icons"> close </span></a>
+                        </div>
+                    </li>
+                    <li class="row mb-5">
+                        <div class="col-6 col-lg-3">
+                            <img class="orderListImg" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg" alt="2021 台味設計展">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <h3 class="fw-bold">奧利弗·洛奇百年紀念展</h3>
+                                <a class="closeBtn d-lg-none" href="#"><span class="d-block material-icons"> close </span></a>
+                            </div>
+                            <p>01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between mb-1">
+                                <p class="text-mainTextColor">全票<span class="text-black fw-bold fs-7 ms-1 d-lg-none">1</span></p>
+                                <p class="fw-bold fs-7 d-lg-none">NT$350</p>
+                            </div>
+                        </div>
+                        <div class="d-none col-lg-2 d-lg-flex justify-content-center align-items-center">
+                            <span class="fs-7 fw-bold">NT$350</span>
+                        </div>
+                        <div class="d-none col-lg-3 d-lg-flex justify-content-center align-items-center">
+                            <div class="amountBtnGroup flex-md-row flex-column">
+                                <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                                <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                                <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                            </div>
+                        </div>
+                        <div class="d-none col-lg-1 d-lg-flex align-items-center justify-content-center">
+                            <a class="closeBtn" href="#"><span class="d-block material-icons"> close </span></a>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="totalArea pb-5">
+                        <div class="total d-flex justify-content-between mb-3">
+                            <span class="fs-7">小計</span>
+                            <span class="fs-7">NT$1750</span>
+                        </div>
+                        <button type="button" class="btn btn-secondary w-100">下一步</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 下一步按鈕 -->
+    
+    
+
+
+</div>
+
+
+
+    

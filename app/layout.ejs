@@ -13,6 +13,8 @@
   </head>
 
   <body>
+
+
 <!-------------- 漢堡選單 ---------------->
     <!-- <header class="border border-1 border-mainTextColor">
       <div class="container"> -->
@@ -46,9 +48,12 @@
     </header> -->
     
 
+
     <%- contents %>    <!-- 各分頁自己獨立的內容 -->
 
-    <!-- ticket icon 上跳出來的訂購視窗 (offcanvas) -->
+<!-- 結帳頁面的節目選單 -->
+
+    <!-- (offcanvas) ticket icon 上跳出來的訂購視窗  -->
 
     <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header pt-20">
@@ -59,7 +64,7 @@
         <ul>
           <li>
             <div class="card rounded pb-4 ps-4 mb-2">
-              <a class="cartCloseBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+              <a class="closeBtn mt-1" href="#"><span class="material-icons"> close </span></a>
                 <div class="cardBody d-flex">
                   <div class="offcanvasImg">
                     <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
@@ -70,17 +75,17 @@
                     <p class="text-mainTextColor mb-3">全票</p>
                     <p class="fw-bold fs-7">NT$350</p>
                   </div>
-                  <div class="cartCountBox d-flex flex-md-row flex-column align-items-center justify-content-between ms-10">
-                    <button class="border-0 bg-white me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
-                    <input class="border-0 text-center mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
-                    <button class="border-0 bg-white ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                  <div class="amountBtnGroup flex-md-row flex-column ms-10">
+                    <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                    <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                    <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
                   </div>
                 </div>
             </div>
           </li>
           <li>
             <div class="card rounded pb-4 ps-4 pe-2 mb-2">
-              <a class="cartCloseBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+              <a class="closeBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
                 <div class="cardBody d-flex">
                   <div class="offcanvasImg">
                     <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
@@ -91,17 +96,17 @@
                     <p class="text-mainTextColor mb-3">全票</p>
                     <p class="fw-bold fs-7">NT$350</p>
                   </div>
-                  <div class="cartCountBox d-flex flex-md-row flex-column align-items-center justify-content-between ms-10">
-                    <button class="border-0 bg-white me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
-                    <input class="border-0 text-center mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
-                    <button class="border-0 bg-white ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                  <div class="amountBtnGroup flex-md-row flex-column ms-10">
+                    <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                    <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                    <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
                   </div>
                 </div>
             </div>
           </li>
          <li>
           <div class="card rounded pb-4 ps-4 pe-2 mb-2">
-            <a class="cartCloseBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+            <a class="closeBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
               <div class="cardBody d-flex">
                 <div class="offcanvasImg">
                   <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
@@ -112,17 +117,17 @@
                   <p class="text-mainTextColor mb-3">全票</p>
                   <p class="fw-bold fs-7">NT$350</p>
                 </div>
-                <div class="cartCountBox d-flex flex-md-row flex-column align-items-center justify-content-between ms-10">
-                  <button class="border-0 bg-white me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
-                  <input class="border-0 text-center mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
-                  <button class="border-0 bg-white ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                <div class="amountBtnGroup flex-md-row flex-column ms-10">
+                  <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                  <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                  <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
                 </div>
               </div>
           </div>
          </li>
          <li>
           <div class="card rounded pb-4 ps-4 pe-2 mb-2">
-            <a class="cartCloseBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+            <a class="closeBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
               <div class="cardBody d-flex">
                 <div class="offcanvasImg">
                   <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
@@ -133,17 +138,17 @@
                   <p class="text-mainTextColor mb-3">全票</p>
                   <p class="fw-bold fs-7">NT$350</p>
                 </div>
-                <div class="cartCountBox d-flex flex-md-row flex-column align-items-center justify-content-between ms-10">
-                  <button class="border-0 bg-white me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
-                  <input class="border-0 text-center mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
-                  <button class="border-0 bg-white ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                <div class="amountBtnGroup flex-md-row flex-column ms-10">
+                  <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                  <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                  <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
                 </div>
               </div>
           </div>
          </li>
          <li>
           <div class="card rounded pb-4 ps-4 pe-2 mb-2">
-            <a class="cartCloseBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+            <a class="closeBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
               <div class="cardBody d-flex">
                 <div class="offcanvasImg">
                   <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
@@ -154,10 +159,10 @@
                   <p class="text-mainTextColor mb-3">全票</p>
                   <p class="fw-bold fs-7">NT$350</p>
                 </div>
-                <div class="cartCountBox d-flex flex-md-row flex-column align-items-center justify-content-between ms-2">
-                  <button class="border-0 bg-white me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
-                  <input class="border-0 text-center mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
-                  <button class="border-0 bg-white ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                <div class="amountBtnGroup flex-md-row flex-column ms-10">
+                  <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                  <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                  <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
                 </div>
               </div>
           </div>
@@ -169,7 +174,7 @@
           <p class="text-white fs-7 me-6">小計</p>
           <p class="text-white fs-7">NT$1750</p>
         </div>
-        <button type="button" class="btn btn-primary ps-7 pe-7 pt-3 pb-3">結帳去</button>
+        <a href="./orderCheck.html"><button type="button" class="btn btn-primary ps-7 pe-7 pt-3 pb-3">結帳去</button></a>
       </div>
     </div>
 
@@ -240,10 +245,9 @@
   </div>
 </div>
 
-
     <!-- footer 版權宣告區 -->
 
-    <footer class="footer">
+    <footer class="footer <%- display %>">
       <div class="container">
         <div class="innerFooter d-flex justify-content-between align-items-center pt-7 pb-7">
           <ul class="webInfo list-unstyled d-md-flex align-items-center">
@@ -264,6 +268,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+
+
   </body>
 
 </html>
