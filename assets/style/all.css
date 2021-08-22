@@ -19799,18 +19799,6 @@ body img {
   height: 18px;
 }
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 350px;
-}
-
 .subscribeBar {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg");
   background-repeat: no-repeat;
@@ -19983,6 +19971,18 @@ body img {
 
 .scrollbarStyle::-webkit-scrollbar-thumb:hover {
   background: #707070;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 350px;
 }
 
 .mainTitleStyle {
