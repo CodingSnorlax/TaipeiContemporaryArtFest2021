@@ -5,6 +5,16 @@
     color: black;
   }
 
+// 票種按鈕 & hover 
+.customerTypeBtn{
+  border-bottom: 1px solid transparent;
+  color: black;
+
+  &:hover{
+      border-bottom: 1px solid #E31277;
+  }
+}
+
 
 // 數量增減按鈕元件
 .amountBtnGroup{

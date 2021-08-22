@@ -1,3 +1,20 @@
+// 文字類設定------------------------------------------------------------------------
+
+// 標題形式
+.mainTitleStyle{
+  color: black;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+// 第一段內縮設定
+.paragraphTextIndent{
+  text-indent: 2rem;
+}
+
+
+// RWD 斷點相關設定 -------------------------------------------------
+
 // 抓取文字斷點
 $utilities: map-merge(
 $utilities,(
@@ -9,7 +26,6 @@ $utilities,(
     ),
   ),
 );
-
 
 // navbar 的 logo 上下左右置中設定
 
@@ -28,4 +44,6 @@ $utilities,(
         border-right: 1px solid #707070;
     }
 } 
+
+
 

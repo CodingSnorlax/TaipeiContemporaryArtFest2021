@@ -1,0 +1,26 @@
+// 次要導覽列 ------------------------------------
+
+.subNav{
+    height: 2.75rem; /* 隱藏下方捲軸 */
+    overflow-y: hidden; 
+  }
+  
+  .subNavList{
+      flex-wrap: nowrap;
+      padding-top: 0.6rem;
+      padding-bottom: 1.5rem; /* 隱藏下方捲軸 */
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+  
+  .subNavListItem{
+    a{
+      color: #707070;
+      padding: 0 20px;
+  
+      &:hover{
+        border-bottom: 1px solid #E31277;
+      }
+    }
+  }
+  

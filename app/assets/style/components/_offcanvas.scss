@@ -1,0 +1,46 @@
+// offcanvas ----------------------------
+.offcanvas{
+    width: 540px;
+  }
+  
+  .offcanvasImg{
+    width: 120px;
+    height: 120px;
+    img{
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  .offcanvas-header{
+    max-height: 100%;
+    overflow: hidden;
+  }
+  
+  // offcanvas 的滑動卷軸
+  .scrollbarStyle{
+    /* width */
+  &::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 4px 0px 0px 4px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #E9ECEF; 
+  }
+   
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #E31277;
+    border-radius: 4px 0px 0px 4px;
+    min-height: 81px;
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #707070, 
+  }
+  }
+  

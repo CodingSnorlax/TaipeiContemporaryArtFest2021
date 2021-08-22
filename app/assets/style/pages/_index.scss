@@ -1,11 +1,3 @@
-// 常用 class
-
-.mainTitleStyle{
-  color: black;
-  font-weight: bold;
-  font-size: 32px;
-}
-
 // 主視覺區塊 ------------------------------------
 
 .banner{
@@ -17,26 +9,6 @@
   height: 480px;
 }
 
-// 次要導覽列 ------------------------------------
-
-.subNav{
-  height: 2.75rem; /* 隱藏下方捲軸 */
-  overflow-y: hidden; 
-}
-
-.subNavList{
-    flex-wrap: nowrap;
-    padding-bottom: 1rem; /* 隱藏下方捲軸 */
-    overflow-x: auto;
-    white-space: nowrap;
-}
-
-.subNavListItem{
-  a{
-    color: #707070;
-    padding: 14px 22px;
-  }
-}
 
 .exhibitionImg{
     height: 350px;
