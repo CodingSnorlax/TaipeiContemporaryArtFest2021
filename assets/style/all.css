@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -19773,14 +19774,8 @@ table {
 }
 
 body {
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
   line-height: 1.5;
-}
-
-body *, body *::before, body *::after {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body a {
@@ -19802,53 +19797,6 @@ body img {
   border-radius: 9px;
   width: 22px;
   height: 18px;
-}
-
-.offcanvas {
-  width: 540px;
-}
-
-.offcanvasImg {
-  width: 120px;
-  height: 120px;
-}
-
-.offcanvasImg img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
-.offcanvas-header {
-  max-height: 100%;
-  overflow: hidden;
-}
-
-.scrollbarStyle {
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
-
-.scrollbarStyle::-webkit-scrollbar {
-  width: 2px;
-  border-radius: 4px 0px 0px 4px;
-}
-
-.scrollbarStyle::-webkit-scrollbar-track {
-  background: #E9ECEF;
-}
-
-.scrollbarStyle::-webkit-scrollbar-thumb {
-  background: #E31277;
-  border-radius: 4px 0px 0px 4px;
-  min-height: 81px;
-}
-
-.scrollbarStyle::-webkit-scrollbar-thumb:hover {
-  background: #707070;
 }
 
 .swiper-container {
@@ -19880,6 +19828,15 @@ body img {
   width: 24px;
   height: 24px;
   color: black;
+}
+
+.customerTypeBtn {
+  border-bottom: 1px solid transparent;
+  color: black;
+}
+
+.customerTypeBtn:hover {
+  border-bottom: 1px solid #E31277;
 }
 
 .amountBtnGroup {
@@ -19956,6 +19913,88 @@ body img {
   background-color: #fff;
 }
 
+.subNav {
+  height: 2.75rem;
+  /* 隱藏下方捲軸 */
+  overflow-y: hidden;
+}
+
+.subNavList {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-top: 0.6rem;
+  padding-bottom: 1.5rem;
+  /* 隱藏下方捲軸 */
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.subNavListItem a {
+  color: #707070;
+  padding: 0 20px;
+}
+
+.subNavListItem a:hover {
+  border-bottom: 1px solid #E31277;
+}
+
+.offcanvas {
+  width: 540px;
+}
+
+.offcanvasImg {
+  width: 120px;
+  height: 120px;
+}
+
+.offcanvasImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.offcanvas-header {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.scrollbarStyle {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.scrollbarStyle::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.scrollbarStyle::-webkit-scrollbar-track {
+  background: #E9ECEF;
+}
+
+.scrollbarStyle::-webkit-scrollbar-thumb {
+  background: #E31277;
+  border-radius: 4px 0px 0px 4px;
+  min-height: 81px;
+}
+
+.scrollbarStyle::-webkit-scrollbar-thumb:hover {
+  background: #707070;
+}
+
+.mainTitleStyle {
+  color: black;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.paragraphTextIndent {
+  text-indent: 2rem;
+}
+
 @media (min-width: 992px) {
   .position-lg-absolute {
     position: absolute;
@@ -19991,12 +20030,6 @@ body img {
   }
 }
 
-.mainTitleStyle {
-  color: black;
-  font-weight: bold;
-  font-size: 32px;
-}
-
 .banner {
   background-image: url("https://images.unsplash.com/photo-1506846540181-347008948fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80");
   background-repeat: no-repeat;
@@ -20004,26 +20037,6 @@ body img {
   background-position: center;
   width: 100%;
   height: 480px;
-}
-
-.subNav {
-  height: 2.75rem;
-  /* 隱藏下方捲軸 */
-  overflow-y: hidden;
-}
-
-.subNavList {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  /* 隱藏下方捲軸 */
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.subNavListItem a {
-  color: #707070;
-  padding: 14px 22px;
 }
 
 .exhibitionImg {
@@ -20062,19 +20075,6 @@ body img {
   width: 46px;
 }
 
-.typeBtn {
-  border-bottom: 1px solid transparent;
-  color: black;
-}
-
-.typeBtn:hover {
-  border-bottom: 1px solid #E31277;
-}
-
-.firstParagraph {
-  text-indent: 2rem;
-}
-
 .artWorkOne {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg");
   background-size: cover;
@@ -20093,18 +20093,6 @@ body img {
      object-fit: cover;
   width: 100%;
   height: 120px;
-}
-
-.orderList {
-  overflow-y: scroll;
-  width: 100%;
-  max-height: 600px;
-}
-
-@media (min-width: 768px) {
-  .totalArea {
-    padding-top: 600px;
-  }
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>購物車 - 完成訂購</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+
+
+<!-------------- 漢堡選單 ---------------->
+    <!-- <header class="border border-1 border-mainTextColor">
+      <div class="container"> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border border-1 border-mainTextColor" style="z-index:1090;">
+          <div class="container">
+            <!-- 漢堡Btn -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- logo -->
+            <a class="navbar-brand text-primary position-lg-absolute top-50 start-50 translate-lg-middle fs-6 fs-md-5" href="./index.html">EXHIBINECTION</a>
+            <!-- ticket icon -->
+            <a class="position-relative order-lg-3 ms-lg-6 d-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="#">
+              <span class="confirmIcon d-block material-icons text-mainTextColor">confirmation_number</span>
+              <span class="confirmNumber position-absolute text-center fs-10">5</span>
+            </a>
+            <!-- 漢堡Btn的折疊選單 -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-md-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <!-- </div>
+    </header> -->
+    
+
+    
+<div class="container">
+
+    <div class="row justify-content-center">
+        
+        <div class="orderDoneText col-md-6">
+
+            <div class="row pt-11 mb-6 justify-content-center">
+                <div class="orderDoneIconcol-6 col-md-4 text-center">
+                    <span class="material-icons fs-1"> check_circle_outline</span>
+                    <p class="text-primary fs-7">完成訂購</p>
+                </div>
+            </div>
+
+            <div class="row mb-20">
+                <div class="orderDoneCode">
+                    <p class="mb-10">您的展覽憑證代碼為：</p>
+                    <p class="mb-11 text-primary fs-5 text-center">qr147352</p>
+                </div>
+                <div class="successText">
+                    <p>恭喜您已完成「2021 台北當代藝術展」的購票手續，請於 2021/09/01 ~ 2021/12/31 於展覽入口頁面輸入「展覽憑證代碼」，經驗證無誤後，即可入場參觀。</p>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="orderDoneBtnGroup d-flex">
+                    <a class="d-block w-100 me-2" href="./event.html"><button type="button" class="btn btn-outline-primary w-100">繼續瀏覽</button></a>
+                    <a class="d-block w-100 ms-2" href="./index.html"><button type="button" class="btn btn-secondary w-100">看展去</button></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+    
+    
+    <!-- 各分頁自己獨立的內容 -->
+
+    <!-- (offcanvas) ticket icon 上跳出來的訂購視窗  -->
+
+    <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header pt-20">
+        <h5 class="text-white fw-bold fs-5" id="offcanvasRightLabel">Cart List</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body scrollbarStyle">
+        <ul>
+          <li>
+            <div class="card rounded pb-4 ps-4 mb-2">
+              <a class="closeBtn mt-1" href="#"><span class="material-icons"> close </span></a>
+                <div class="cardBody d-flex">
+                  <div class="offcanvasImg">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
+                  </div>
+                  <div class="cardText ms-4">
+                    <h5 class="fw-bold fs-8 mb-1">2021 台味設計展</h5>
+                    <p class="mb-1">01 JUN — 31 OCT</p>
+                    <p class="text-mainTextColor mb-3">全票</p>
+                    <p class="fw-bold fs-7">NT$350</p>
+                  </div>
+                  <div class="amountBtnGroup flex-md-row flex-column ms-10">
+                    <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                    <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                    <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                  </div>
+                </div>
+            </div>
+          </li>
+          <li>
+            <div class="card rounded pb-4 ps-4 pe-2 mb-2">
+              <a class="closeBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+                <div class="cardBody d-flex">
+                  <div class="offcanvasImg">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
+                  </div>
+                  <div class="cardText ms-4">
+                    <h5 class="fw-bold fs-8 mb-1">No.22 線上設計展</h5>
+                    <p class="mb-1">01 JUN — 31 OCT</p>
+                    <p class="text-mainTextColor mb-3">全票</p>
+                    <p class="fw-bold fs-7">NT$350</p>
+                  </div>
+                  <div class="amountBtnGroup flex-md-row flex-column ms-10">
+                    <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                    <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                    <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                  </div>
+                </div>
+            </div>
+          </li>
+         <li>
+          <div class="card rounded pb-4 ps-4 pe-2 mb-2">
+            <a class="closeBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+              <div class="cardBody d-flex">
+                <div class="offcanvasImg">
+                  <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
+                </div>
+                <div class="cardText ms-4">
+                  <h5 class="fw-bold fs-8 mb-1">高雄設計節</h5>
+                  <p class="mb-1">01 JUN — 31 OCT</p>
+                  <p class="text-mainTextColor mb-3">全票</p>
+                  <p class="fw-bold fs-7">NT$350</p>
+                </div>
+                <div class="amountBtnGroup flex-md-row flex-column ms-10">
+                  <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                  <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                  <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                </div>
+              </div>
+          </div>
+         </li>
+         <li>
+          <div class="card rounded pb-4 ps-4 pe-2 mb-2">
+            <a class="closeBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+              <div class="cardBody d-flex">
+                <div class="offcanvasImg">
+                  <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
+                </div>
+                <div class="cardText ms-4">
+                  <h5 class="fw-bold fs-8 mb-1">肉身實驗劇場</h5>
+                  <p class="mb-1">01 JUN — 31 OCT</p>
+                  <p class="text-mainTextColor mb-3">全票</p>
+                  <p class="fw-bold fs-7">NT$350</p>
+                </div>
+                <div class="amountBtnGroup flex-md-row flex-column ms-10">
+                  <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                  <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                  <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                </div>
+              </div>
+          </div>
+         </li>
+         <li>
+          <div class="card rounded pb-4 ps-4 pe-2 mb-2">
+            <a class="closeBtn d-block mt-1" href="#"><span class="material-icons"> close </span></a>
+              <div class="cardBody d-flex">
+                <div class="offcanvasImg">
+                  <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg" class="img-fluid rounded-start" alt="2021 台味設計展">
+                </div>
+                <div class="cardText ms-4">
+                  <h5 class="fw-bold fs-8 mb-1">奧利弗·洛奇百年紀念展</h5>
+                  <p class="mb-1">01 JUN — 31 OCT</p>
+                  <p class="text-mainTextColor mb-3">全票</p>
+                  <p class="fw-bold fs-7">NT$350</p>
+                </div>
+                <div class="amountBtnGroup flex-md-row flex-column ms-10">
+                  <button class="me-md-2" type="button"><span class="material-icons d-block"> add </span></button>
+                  <input class="mt-1 mb-1 fw-bold fs-7" type="text" placeholder="01">
+                  <button class="ms-md-2" type="button"><span class="material-icons d-block"> remove </span></button>
+                </div>
+              </div>
+          </div>
+         </li>
+        </ul>
+      </div>
+      <div class="offcanvas-footer bg-black d-flex align-items-center justify-content-between pt-9 pb-9 ps-4 pe-4">
+        <div class="offcanvas-footerText d-flex">
+          <p class="text-white fs-7 me-6">小計</p>
+          <p class="text-white fs-7">NT$1750</p>
+        </div>
+        <a href="./orderCheck.html"><button type="button" class="btn btn-primary ps-7 pe-7 pt-3 pb-3">結帳去</button></a>
+      </div>
+    </div>
+
+    <!-- 猜你也喜歡... (swiper) -->
+
+<div class="likeInfo pt-5 pt-md-15 d-none">
+  <div class="container">
+      <h2 class="mainTitleStyle mb-2 mb-md-6">猜你也喜歡...</h2>
+      <div class="row">
+          <div class="col-12 offset-md-1 col-md-11">
+
+              <div class="swiper-container mySwiper">
+
+                  <div class="swiper-wrapper">
+
+                          <div class="swiper-slide">
+                              <div class="card">
+                                  <img class="border-radius-0" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body pb-15">
+                                      <h4 class="fs-7 mb-1 fw-bold">空間·幻境 3D空間設計展</h4>
+                                      <span class="fs-7">$350</span>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                              <div class="card">
+                                  <img class="border-radius-0" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body pb-15">
+                                      <h4 class="fs-7 mb-1 fw-bold">肉身實驗劇場</h4>
+                                      <span class="fs-7">$350</span>
+                                  </div>
+                              </div>
+                          </div>
+                  
+                          <div class="swiper-slide">
+                              <div class="card">
+                                  <img class="border-radius-0" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg" class="card-img-top" alt="...">
+                                  <div class="card-body pb-15">
+                                      <h4 class="fs-7 mb-1 fw-bold">奧利弗·洛奇百年紀念展</h4>
+                                      <span class="fs-7">$350</span>
+                                  </div>
+                                </div>
+                          </div>
+                    
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- 訂閱最新消息 -->
+
+<div class="subscribeBar d-flex flex-column justify-content-end pb-9 d-none">
+  <div class="container">
+      <div class="subscribeContent">
+          <div class="subscribeText mb-5">
+              <p class="text-white fw-bold fs-5 fs-md-3">想收到最新消息嗎？</p>
+              <p class="text-white fw-bold fs-5 fs-md-3">快訂閱我們！</p>
+          </div>
+          <div class="subscribeBtnGroup input-group mb-3">
+              <input type="text" class="form-control" placeholder="請輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text ps-13 pe-13 btn-secondary" id="basic-addon2">訂閱</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <!-- footer 版權宣告區 -->
+
+    <footer class="footer d-none">
+      <div class="container">
+        <div class="innerFooter d-flex justify-content-between align-items-center pt-7 pb-7">
+          <ul class="webInfo list-unstyled d-md-flex align-items-center">
+            <li class="me-4 text-mainTextColor fs-6 fs-lg-5">EXHIBINECTION</li>
+            <li class="text-mainTextColor">© 2021. All Rights Reserved.</li>
+          </ul>
+          <ul class="footerList list-unstyled d-flex">
+            <li class="me-6"><a class="text-mainTextColor d-md-block d-none" href="#">Sign in</a></li>
+            <li><a class="text-mainTextColor d-md-block d-none" href="#">Sign up</a></li>
+          </ul>
+        </div>
+        
+
+      </div>
+    </footer>
+
+    <!-- JS 放置處 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+
+  </body>
+
+</html>
