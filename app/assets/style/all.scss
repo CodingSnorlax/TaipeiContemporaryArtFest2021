@@ -4,14 +4,14 @@
 // 全域設定
 @import './base/reset';
 @import './base/base';
+@import './base/background';
 
 // layout 
-@import './layout/layout';
+@import './layout/subNavbar';
 
 // components
 @import './components/buttons';
 @import './components/timeline';
-@import './components/subNavbar';
 @import './components/offcanvas';
 @import './components/swiper';
 

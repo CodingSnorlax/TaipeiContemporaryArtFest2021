@@ -1,3 +1,28 @@
+// navbar ticket icon 上方數字小紅點 --------
+.confirmNumber{
+  right: -12px;
+  top: -7px;
+  color: white;
+  background: #E31277;
+  border-radius: 9px;
+  width: 22px;
+  height: 18px;
+}
+
+// 首頁 email 訂閱電子報欄位
+.emailBtnGroup{
+  input{
+    border-radius: 4px 0px 0px 4px;
+    padding: 12px 74px 12px 12px;
+    
+  }
+  button{
+    border-radius: 0px 4px 4px 0px;
+    padding: 12px 52px;
+  }
+}
+
+
 // 關閉按鈕 (24 x 24)
 .closeBtn{
     width: 24px;
@@ -14,7 +39,6 @@
       border-bottom: 1px solid #E31277;
   }
 }
-
 
 // 數量增減按鈕元件
 .amountBtnGroup{
@@ -33,3 +57,4 @@
     background-color: #fff;
   }
 }
+
