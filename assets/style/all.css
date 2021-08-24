@@ -19789,6 +19789,69 @@ body img {
   height: auto;
 }
 
+.banner {
+  background-image: url("https://images.unsplash.com/photo-1506846540181-347008948fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 480px;
+}
+
+.mainLiveShow {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.mainLiveShowContent {
+  background-color: rgba(25, 0, 20, 0.7);
+}
+
+.subscribeBarBg {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.artWorkBg {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.subNav {
+  height: 2.75rem;
+  /* 隱藏下方捲軸 */
+  overflow-y: hidden;
+}
+
+.subNavList {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-top: 0.6rem;
+  padding-bottom: 1.5rem;
+  /* 隱藏下方捲軸 */
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.subNavListItem a {
+  color: #707070;
+  padding: 0 20px;
+}
+
+.subNavListItem a:hover {
+  border-bottom: 1px solid #E31277;
+}
+
 .confirmNumber {
   right: -12px;
   top: -7px;
@@ -19799,17 +19862,14 @@ body img {
   height: 18px;
 }
 
-.subscribeBar {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 400px;
-  background-position: center;
-  background-size: cover;
+.emailBtnGroup input {
+  border-radius: 4px 0px 0px 4px;
+  padding: 12px 74px 12px 12px;
 }
 
-.subscribeBtnGroup {
-  width: 350px;
+.emailBtnGroup button {
+  border-radius: 0px 4px 4px 0px;
+  padding: 12px 52px;
 }
 
 .closeBtn {
@@ -19899,31 +19959,6 @@ body img {
           transform: translate(-50%, -25%);
   border: 2px solid #E31277;
   background-color: #fff;
-}
-
-.subNav {
-  height: 2.75rem;
-  /* 隱藏下方捲軸 */
-  overflow-y: hidden;
-}
-
-.subNavList {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding-top: 0.6rem;
-  padding-bottom: 1.5rem;
-  /* 隱藏下方捲軸 */
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.subNavListItem a {
-  color: #707070;
-  padding: 0 20px;
-}
-
-.subNavListItem a:hover {
-  border-bottom: 1px solid #E31277;
 }
 
 .offcanvas {
@@ -20030,15 +20065,6 @@ body img {
   }
 }
 
-.banner {
-  background-image: url("https://images.unsplash.com/photo-1506846540181-347008948fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 480px;
-}
-
 .exhibitionImg {
   height: 350px;
 }
@@ -20054,32 +20080,12 @@ body img {
   margin-left: 10px;
 }
 
-.mainLiveShow {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-}
-
-.mainLiveShowContent {
-  background-color: rgba(25, 0, 20, 0.7);
-}
-
 .mainLiveShowTitle span {
   border-left: 1px solid white;
 }
 
 .orderBtn input {
   width: 46px;
-}
-
-.artWorkOne {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
 }
 
 .artWorkTwo img {
